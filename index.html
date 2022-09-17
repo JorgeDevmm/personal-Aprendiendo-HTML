@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<!-- Posicionar el atributo del idioma, se puede agregar dominio - mx -->
-<html lang="es-PE">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 55 a 66 caracteres -->
-    <title>Aprendiendo HTML</title>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- no más de 165 caracteres -->
-    <meta name="description" content="En esta página estamos aprendiendo lo fundamentos de Html con jorge">
+    <meta
+      name="description"
+      content="En esta página estamos aprendiendo lo fundamentos de Html con jorge"
+    />
+    <!-- 55 - 66 Caracteres-->
+    <title>Aprendiendo HTML</title>
     <!-- aplicando estilos de archivo externo de estilos -->
-    <link rel="stylesheet" href="assets/estilos.css">
+    <link rel="stylesheet" href="assets/estilos.css" />
     <style>
-        h2{
-            color:orangered;
-        }
+      h2 {
+        color: rgb(30, 30, 139);
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-    <h2>Aprendiendo HTML</h2>
+  <body>
+    <h2 id="inicio">Aprendiendo HTML</h2>
     <!-- Esto es un comentario -->
     <!-- Enlaces de la sección de introduccióna HTML y su documentación -->
     <!-- - https://www.w3.org/html/
@@ -34,268 +34,385 @@
 
     <p>Hola, escribiendo mi primer documento HTML</p>
     <p>Aprendiendo sobre Diseño Web</p>
-    <hr>
-    <h2>Encabezados HTML</h2>
+    <h3>Aprendiendo sobre Diseño Web</h3>
+    <ul>
+      <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+      <li><a href="index.html#texto-basico">Etiquetas de texto básicas</a></li>
+      <li>
+        <a href="index.html#texto-semantico">Etiquetas de texto Semánticas</a>
+      </li>
+      <li><a href="index.html#etiquetas-saltos">Etiquetas de Saltos</a></li>
+      <li><a href="index.html#etiquetas-formateo">Etiquetas de formateo</a></li>
+      <li>
+        <a href="index.html#etiquetas-semanticas-estructuras"
+          >Etiquetas semanticas de estructuras</a
+        >
+      </li>
+      <li>
+        <a href="index.html#etiqueta-bloque-linea"
+          >Etiquetas de bloque vs etiquetas de línea</a
+        >
+      </li>
+      <li><a href="index.html#estilos-css">Estilos Css en HTML</a></li>
+      <li><a href="index.html#imagenes">Imagenes</a></li>
+      <li><a href="index.html#svg">SVG</a></li>
+      <li><a href="index.html#figuras">Figuras</a></li>
+      <li><a href="index.html#listas-ordenadas">listas Ordenadas</a></li>
+      <li><a href="index.html#listas-desordenadas">Listas Desordenadas</a></li>
+      <li><a href="index.html#listas-definicion">Listas de definición</a></li>
+      <li><a href="index.html#tablas">Tablas</a></li>
+      <li><a href="index.html#enlaces">Enlaces</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <a href="index.html#inicio">☝️</a>
+    </ul>
+    <hr />
+
+    <h2 id="encabezados">Encabezados HTML</h2>
     <h1>Encabezado de nivel 1</h1>
     <h2>Encabezado de nivel 2</h2>
     <h3>Encabezado de nivel 3</h3>
     <h4>Encabezado de nivel 4</h4>
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
-    <hr>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
     <!-- Estiquetas de texto básicas -->
-    <h2>Etiquetas de texto básicas</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat amet pariatur asperiores delectus maxime voluptatum, corporis animi sed dolor sequi non natus beatae omnis modi fugit debitis deleniti exercitationem!</p>
-    
+    <h2 id="texto-basico">Etiquetas de texto básicas</h2>
     <p>
-    Palabras en: <b>negrita</b>,<i>italíca</i>,<u>subrayado</u>,e=mc<sup>2</sup>, h<sub>2</sub>O, <mark>marcaTexto</mark>, <small>letras pequeñas</small>   
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat
+      amet pariatur asperiores delectus maxime voluptatum, corporis animi sed
+      dolor sequi non natus beatae omnis modi fugit debitis deleniti
+      exercitationem!
     </p>
-    <hr>
+
+    <p>
+      Palabras en:
+      <b>negrita</b>,<i>italíca</i>,<u>subrayado</u>,e=mc<sup>2</sup>,
+      h<sub>2</sub>O, <mark>marcaTexto</mark>, <small>letras pequeñas</small>
+    </p>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
     <!-- Etiquetas texto semanticas -->
-    <h2>Estiquetas de texto Semánticas</h2>
+    <h2 id="texto-semantico">Estiquetas de texto Semánticas</h2>
     <p>
-        <!-- dar importancia -->
-        <strong>Este texto es importante</strong> <em>Este texto hace énfasis</em>
+      <!-- dar importancia -->
+      <strong>Este texto es importante</strong> <em>Este texto hace énfasis</em>
     </p>
+    <!-- citar y espaciado-->
+    <blockquote>Yo sólo sé, que no se nada</blockquote>
+    <cite>Sócrates</cite>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
 
-    <!-- citar -->
-    <p>
-        <blockquote>Yo sólo sé, que no se nada</blockquote>
-        <cite>Sócrates</cite>
-    </p>
-    <hr>
     <!-- Etiquetas de saltos -->
-    <h2>Etiquetas de Saltos</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa, itaque error minima atque molestiae quam adipisci possimus ullam, <br> et nam temporibus vero? Accusantium reprehenderit eos excepturi nostrum ea vitae obcaecati.</p>
-
+    <h2 id="etiquetas-saltos">Etiquetas de Saltos</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+      Culpa, itaque error minima atque molestiae quam adipisci possimus ullam,
+      <br />
+      et nam temporibus vero? Accusantium reprehenderit eos excepturi nostrum ea
+      vitae obcaecati.
+    </p>
     <!-- salto semantico de un bloque de contenido -->
-    <hr>
-    <h2>Etiquetas de formateo</h2>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- etiquetas de formateo -->
+    <h2 id="etiquetas-formateo">Etiquetas de formateo</h2>
     <p>
-        
-    <pre><!--Preformateo-->
-    Tareas por hacer
-    -HTML    
-        -Terminar de grabar las secciones de este curso
-        -Editar en un sólo Video
-        -CSS
-        -Comensar a grabar secciones CSS
-        -Editar en un sólo Video
-    </pre>
+      <!-- <pre> preformateo
+        Tareas por hacer
+        -HTML    
+            -Terminar de grabar las secciones de este curso
+            -Editar en un sólo Video
+            -CSS
+            -Comensar a grabar secciones CSS
+            -Editar en un sólo Video
+      </pre> -->
     </p>
+
     <p>
-    <code>
-        Este texto esta en formato de código <br>
-        function suma(a,b){<br>
-            return a+b;
-        }
-    </code>
+      <!-- <code>
+        Este texto esta en formato de código <br />
+        function suma(a,b){<br />
+        return a+b; }
+      </code> -->
     </p>
+
     <p>
-    <pre>
+      <!-- <pre>
         <code>
-        function multiplicación(nume){
+          function multiplicación(nume){
             for(let i=0;i<10;i++){
                 console.log(`${nume} * ${i} = ${nume*i}`);
                 return &lt;Title/&gt;
             }
         }
         </code>
-    </pre>
+      </pre> -->
     </p>
-    <hr>
-    <h2>Etiquetas semanticas de estructuras</h2>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- Etiquetas semanticas de estructuras -->
+    <h2 id="etiquetas-semanticas-estructuras">
+      Etiquetas semanticas de estructuras
+    </h2>
     <div>div - Es una etiqueta contenedora que no tiene semántica</div>
     <main>
-        main - Define la sección principal del documento, sólo puede existir una etiqueta main por documento 
+      main - Define la sección principal del documento, sólo puede existir una
+      etiqueta main por documento
     </main>
-    <footer>
-        footer - pié de página de un sitio web o de una sección
-    </footer>
-    <nav>
-        nav - Representa una navegación, un conjunto de enlaces
-    </nav>
+    <footer>footer - pié de página de un sitio web o de una sección</footer>
+    <nav>nav - Representa una navegación, un conjunto de enlaces</nav>
     <article>
-        article - Representa una sección autocontenido(que por sí sola se explica)
+      article - Representa una sección autocontenido(que por sí sola se explica)
     </article>
-    <aside>
-        aside - contenido complementario o secundario
-    </aside>
-    <section>
-        section - una sección de contenido génerico
-    </section>
+    <aside>aside - contenido complementario o secundario</aside>
+    <section>section - una sección de contenido génerico</section>
     <address>
-        address - representa una dirección y una información de contacto
+      address - representa una dirección y una información de contacto
     </address>
-    <hr>
-    <h2>Etiquetas de bloque vs etiquetas de línea</h2>
-    <div style="background-color: yellow; color: red">La etiqueta de bloque por excelencia es la div, una etiqueta de bloque que genera saltos de línea con sus etiquetas hermanas</div>
-    <span style="background-color: greenyellow">La etiqueta de linea por excelencia es la span,una etiqueta de linea solo ocupa el espacio necesario que tiene su contenido</span>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- etiquetas bloque y linea -->
+    <h2 id="etiqueta-bloque-linea">
+      Etiquetas de bloque vs etiquetas de línea
+    </h2>
+    <div style="background-color: yellow; color: red">
+      La etiqueta de bloque por excelencia es la div, una etiqueta de bloque que
+      genera saltos de línea con sus etiquetas hermanas
+    </div>
+    <span style="background-color: greenyellow"
+      >La etiqueta de linea por excelencia es la span,una etiqueta de linea solo
+      ocupa el espacio necesario que tiene su contenido</span
+    >
     <span>hola como estan</span>
-    <hr>
-    <h2>Estilos Css en HTML</h2>
-    <hr>
-    <h2>Imagenes</h2>
-    <img src="img/periodic-table-of-html-elements.png" alt="Tabla periódica de los elementos html">
-    <img src="img/puesta-sol.jpg" alt="puesta del sol y KEnAi">
-    <img src="img/this-is-fine.gif" alt="Meme del perro del this is fine">
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- estilos css en html -->
+    <h2 id="estilos-css">Estilos Css en HTML</h2>
+    <p>estilos con archivo externo enlazado al archivo index.html</p>
+    <p>estilo en linea desde el elemento head</p>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- imagenes -->
+    <h2 id="imagenes">Imagenes</h2>
+    <img
+      src="img/periodic-table-of-html-elements.png"
+      alt="Tabla periódica de los elementos html"
+    />
+    <img src="img/puesta-sol.jpg" alt="puesta del sol y KEnAi" />
+    <img src="img/this-is-fine.gif" alt="Meme del perro del this is fine" />
     <!-- <img src="img/kEnAi.svg" alt="kEnAi"> -->
-    <hr>
-    <h2>SVG</h2>
-    <img src="img/youtube.svg" alt="youtube">
-    <img src="img/fox-svgrepo-com.svg" alt="Fox in SVG">
-    <hr>
-    <h2>Figuras</h2>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- svg -->
+    <h2 id="svg">SVG</h2>
+    <img src="img/youtube.svg" alt="youtube" />
+    <img src="img/fox-svgrepo-com.svg" alt="Fox in SVG" />
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- figuras -->
+    <h2 id="figuras">Figuras</h2>
     <figure>
-        <img src="img/periodic-table-of-html-elements.png" alt="Tabla de los elementos HTML">
-        <figcaption>Tabla de los elementos HTML</figcaption>
+      <img
+        src="img/periodic-table-of-html-elements.png"
+        alt="Tabla de los elementos HTML"
+      />
+      <figcaption>Tabla de los elementos HTML</figcaption>
     </figure>
-    <hr>
-    <h2>listar Ordenadas</h2>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- listas ordenadas -->
+    <h2 id="listas-ordenadas">Listas Ordenadas</h2>
     <h3>Las estaciones del año</h3>
     <ol>
-        <li>primavera</li>
-        <li>verano</li>
-        <li>otoño</li>
-        <li>invierno</li>
+      <li>primavera</li>
+      <li>verano</li>
+      <li>otoño</li>
+      <li>invierno</li>
     </ol>
     <ol start="3">
-        <li>primavera</li>
-        <li>verano</li>
-        <li>otoño</li>
-        <li>invierno</li>
+      <li>primavera</li>
+      <li>verano</li>
+      <li>otoño</li>
+      <li>invierno</li>
     </ol>
-    <ol reversed><!--atributo booleanos no se pone valor se define si true o false-->
-        <li>primavera</li>
-        <li>verano</li>
-        <li>otoño</li>
-        <li>invierno</li>
+    <ol reversed>
+      <!--atributo booleanos no se pone valor se define si true o false-->
+      <li>primavera</li>
+      <li>verano</li>
+      <li>otoño</li>
+      <li>invierno</li>
     </ol>
     <ol type="I">
-        <li>primavera</li>
-        <li>verano</li>
-        <li>otoño</li>
-        <li>invierno</li>
+      <li>primavera</li>
+      <li>verano</li>
+      <li>otoño</li>
+      <li>invierno</li>
     </ol>
-    <hr>
-    <h2>Listas Desordenadas</h2>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!--Listas desordenadas-->
+    <h2 id="listas-desordenadas">Listas Desordenadas</h2>
     <h3>Cosas por hacer</h3>
-    <hr>
-    <ul type="disc"><!--disc-circle-->
-        <li>Terminar de grabar el curso html</li>
-        <li>Editar video</li>
-        <li>subirlo</li>
+    <hr />
+    <ul type="disc">
+      <!--disc-circle-->
+      <li>Terminar de grabar el curso html</li>
+      <li>Editar video</li>
+      <li>subirlo</li>
     </ul>
-    <ul type="circle"><!--disc-circle-->
-        <li>Terminar de grabar el curso html</li>
-        <li>Editar video</li>
-        <li>subirlo</li>
+    <ul type="circle">
+      <!--disc-circle-->
+      <li>Terminar de grabar el curso html</li>
+      <li>Editar video</li>
+      <li>subirlo</li>
     </ul>
-    <ul type="square"><!--disc-circle-->
-        <li>Terminar de grabar el curso html</li>
-        <li>Editar video</li>
-        <li>subirlo</li>
+    <ul type="square">
+      <!--disc-circle-->
+      <li>Terminar de grabar el curso html</li>
+      <li>Editar video</li>
+      <li>subirlo</li>
     </ul>
-    <hr>
-    <h2>Listas de definición</h2><!--glosario-->
-    <hr>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- lista de definición -->
+    <h2 id="listas-definicion">Listas de definición</h2>
+    <!--glosario-->
     <dl>
-        <dt>HTML</dt><!--Termino a definir-->
-         <dd>Es un lenguaje de marcado que define el contenido de la pagina web</dd><!--Definición del texto a definir-->
-        <dt>CSS</dt><!--Termino a definir-->
-         <dd>Es un lenguaje de definición que da estilos al código html</dd><!--Definición del texto a definir-->
-        <dt>JAVASCRIPT</dt><!--Termino a definir-->
-         <dd>Es un lenguaje de la web</dd><!--Definición del texto a definir-->
+      <dt>HTML</dt>
+      <!--Termino a definir-->
+      <dd>
+        Es un lenguaje de marcado que define el contenido de la pagina web
+      </dd>
+      <!--Definición del texto a definir-->
+      <dt>CSS</dt>
+      <!--Termino a definir-->
+      <dd>Es un lenguaje de definición que da estilos al código html</dd>
+      <!--Definición del texto a definir-->
+      <dt>JAVASCRIPT</dt>
+      <!--Termino a definir-->
+      <dd>Es un lenguaje de la web</dd>
+      <!--Definición del texto a definir-->
     </dl>
-    <hr>
-    <h2>Tablas</h2>
-    <hr>
-    <table><!--tabla basica-->
-        <!-- table row fila de tabla -->
-        <tr>
-            <!-- table data (celdas) -->
-            <td>Nombre</td>
-            <td>Constelación</td>
-            <td>Tipo</td>
-        </tr>
-        <tr>
-            <td>Ikki</td>
-            <td>fenix</td>
-            <td>bronce</td>
-        </tr>
-        <tr>
-            <td>shaina</td>
-            <td>ofiuco</td>
-            <td>plata</td>
-        </tr>
-        <tr>
-            <td>saga</td>
-            <td>Géminis</td>
-            <td>dorado</td>
-        </tr>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- tablas -->
+    <h2 id="tablas">Tablas</h2>
+    <table>
+      <!--tabla basica-->
+      <!-- table row fila de tabla -->
+      <tr>
+        <!-- table data (celdas) -->
+        <td>Nombre</td>
+        <td>Constelación</td>
+        <td>Tipo</td>
+      </tr>
+      <tr>
+        <td>Ikki</td>
+        <td>fenix</td>
+        <td>bronce</td>
+      </tr>
+      <tr>
+        <td>shaina</td>
+        <td>ofiuco</td>
+        <td>plata</td>
+      </tr>
+      <tr>
+        <td>saga</td>
+        <td>Géminis</td>
+        <td>dorado</td>
+      </tr>
     </table>
-    <hr>
-    <table><!--tabla mas elaborada-->
-        <thead>
-            <tr>
-                <th colspan="3">Tabla de los santos de Athena</th><!--combinar 3 columnas-->
-            </tr>
-            <tr>
-                <th>Nombre</th><!--encabezados de fila-->
-                <th>Constelación</th>
-                <th>Tipo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ikki</td><!--rowspan="2"  combinar 2 filas-->
-                <td>fenix</td>
-                <td>bronce</td>
-            </tr>
-            <tr>
-                <td>Mistry</td>
-                <td>Lagarto</td>
-                <td>plata</td>
-            </tr>
-            <tr>
-                <td>saga</td>
-                <td>Géminis</td>
-                <td>dorado</td>
-            </tr>
-            <tr>
-                <td>shaina</td>
-                <td rowspan="2">ofiuco</td>
-                <td>plata</td>
-            </tr>
-            <tr>
-                <td>odiseo</td>
-                <td>dorado</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
-        </tfoot>
+    <hr />
+
+    <!-- tablas mas elaboradas -->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Tabla de los santos de Athena</th>
+          <!--combinar 3 columnas-->
+        </tr>
+        <tr>
+          <th>Nombre</th>
+          <!--encabezados de fila-->
+          <th>Constelación</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ikki</td>
+          <!--rowspan="2"  combinar 2 filas-->
+          <td>fenix</td>
+          <td>bronce</td>
+        </tr>
+        <tr>
+          <td>Mistry</td>
+          <td>Lagarto</td>
+          <td>plata</td>
+        </tr>
+        <tr>
+          <td>saga</td>
+          <td>Géminis</td>
+          <td>dorado</td>
+        </tr>
+        <tr>
+          <td>shaina</td>
+          <td rowspan="2">ofiuco</td>
+          <td>plata</td>
+        </tr>
+        <tr>
+          <td>odiseo</td>
+          <td>dorado</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="3">
+          <small>Saint Seiya fue creado por Masami Kurumada</small>
+        </th>
+      </tfoot>
     </table>
-    <hr>
-    <h2>Enlaces</h2>
-    <hr>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- enlaces -->
+    <h2 id="enlaces">Enlaces</h2>
+    <hr />
     <a href="hola.html">Hacia la pagina hola</a>
-    <br>
+    <br />
     <!-- enlaces externos se puede aplicar target="_blank" nueva pestaña -->
     <!-- el nofollow no relacionado con tu web par ael tema de posicionamiento motores de busqueda bot-->
-    <a href="https://google.com" target="_blank" rel="nofollow">visita Google</a>
-    <hr>
+    <a href="https://google.com" target="_blank" rel="nofollow"
+      >visita Google</a
+    >
+    <hr />
     <a href="https://facebook.com" target="_blank">
-        <img src="img/youtube.svg" alt="youtube">
+      <img src="img/youtube.svg" alt="youtube" />
     </a>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
 
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- script -->
     <h2>script en HTML</h2>
     <script>
-        console.log(`hola aqui estamos aprendiendo HTML`);
+      console.log(`hola aqui estamos aprendiendo HTML`);
     </script>
     <script src="assets/codigos.js"></script>
-</body>
-
+  </body>
 </html>
