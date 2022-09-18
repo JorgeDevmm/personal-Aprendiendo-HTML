@@ -42,5 +42,6 @@ la pagina web
   * https://www.youtube.com/channel/UCU6l...
 
 ---
+📘 Tambien se mostrara los atajos de comando de Emmet el plugin de atajos de visual code
 
 **Repositorio nuevo en rama main**
