@@ -5,23 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hola</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>Hola este es otro documento html</h1>
+    <h1>ATAJOS EMMET</h1>
     <a href="index.html">Regresar al html principal</a>
-  </body>
-  <h1>hola</h1>
 
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-    provident, delectus tempora tempore eius esse quis ex laboriosam. Quae,
-    harum possimus consequatur autem dignissimos ipsa maxime nam qui unde
-    repellendus?
-  </p>
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat
-    amet pariatur asperiores delectus maxime voluptatum, corporis animi sed
-    dolor sequi non natus beatae omnis modi fugit debitis deleniti
-    exercitationem!
-  </p>
+    <!-- anidados -->
+    <!-- nav>a -->
+    <nav><a href=""></a></nav>
+
+    <!-- padres - hijos -->
+    <!-- nav>li>a -->
+    <nav>
+      <ul>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+
+    <!-- nodos inferioes - hermanos -->
+    <!-- div+article+section -->
+    <div></div>
+    <article></article>
+    <section></section>
+    <blockquote></blockquote>
+
+    <!-- trabajar con nodos superiores con elementos padres -->
+    <!-- ul>li>p^li>blockquote -->
+    <ul>
+      <li>
+        <p></p>
+      </li>
+      <li>
+        <blockquote></blockquote>
+      </li>
+    </ul>
+
+    <!-- nodos padres- hijos * cantidad -->
+    <!-- nav>ul>li*5>a -->
+    <nav>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+
+    <!--Agrupación parentesis padres -hijos  -->
+    <!-- ul>li*3>(p+span)*2 -->
+    <ul>
+      <li>
+        <p></p>
+        <span></span>
+        <p></p>
+        <span></span>
+      </li>
+      <li>
+        <p></p>
+        <span></span>
+        <p></p>
+        <span></span>
+      </li>
+      <li>
+        <p></p>
+        <span></span>
+        <p></p>
+        <span></span>
+      </li>
+    </ul>
+
+    <!-- agregar id y clases a las etiquetas -->
+    <!-- nav#menu -->
+    <!-- nav.menu -->
+    <nav id="menu"></nav>
+    <nav class="menu"></nav>
+
+    <!-- agregar y id al mimso tiempo -->
+    <!-- nav#social-media.icon -->
+    <nav id="social-media" class="icon"></nav>
+
+    <!-- mas de una clase a un enlace o boton (boostrap) -->
+    <!-- a.btn.btn-large.text-while.bg-primary.rounded -->
+    <a href="" class="btn btn-large text-white bg-primary rounded"></a>
+
+    <!-- cualquier otro atributo html -->
+    <!-- nav.social-media>a*[target="blank"] -->
+    <nav class="social-media">
+      <a href="" target="blank"></a>
+      <a href="" target="blank"></a>
+      <a href="" target="blank"></a>
+    </nav>
+
+    <!-- nav>ul>li*3>a[target="blank" role="link"] -->
+    <nav>
+      <ul>
+        <li><a href="" target="blank" role="link"></a></li>
+        <li><a href="" target="blank" role="link"></a></li>
+        <li><a href="" target="blank" role="link"></a></li>
+      </ul>
+    </nav>
+
+    <img src="" alt="" />
+    <img src="" alt="" srcset="" />
+
+    <!-- generar elementos numerados con el simbolo $-->
+    <!-- ul>li.item-$*10 -->
+    <ul>
+      <li class="item-1"></li>
+      <li class="item-2"></li>
+      <li class="item-3"></li>
+      <li class="item-4"></li>
+      <li class="item-5"></li>
+      <li class="item-6"></li>
+      <li class="item-7"></li>
+      <li class="item-8"></li>
+      <li class="item-9"></li>
+      <li class="item-10"></li>
+    </ul>
+
+    <!-- combinado con $empieza la numeración y con @empieza el numéro despues que deseamos -->
+    <!-- ul>li.item-$@101*10 -->
+    <ul>
+      <li class="item-101"></li>
+      <li class="item-102"></li>
+      <li class="item-103"></li>
+      <li class="item-104"></li>
+      <li class="item-105"></li>
+      <li class="item-106"></li>
+      <li class="item-107"></li>
+      <li class="item-108"></li>
+      <li class="item-109"></li>
+      <li class="item-110"></li>
+    </ul>
+  </body>
 </html>
