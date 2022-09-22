@@ -9,15 +9,40 @@
       name="description"
       content="En esta página estamos aprendiendo lo fundamentos de Html con jorge"
     />
-    <!-- 55 - 66 Caracteres-->
-    <title>Aprendiendo HTML</title>
+    <!-- url verdadera -->
+    <link rel="canonical" href="https://tudominio.com/la-url-canonica" />
     <!-- aplicando estilos de archivo externo de estilos -->
     <link rel="stylesheet" href="assets/estilos.css" />
+    <!-- icono para navegador y de la pestaña se recomiend 16*16 -->
+    <link rel="icon" href="img/favicon.png" />
+    <!-- icono para dispositivos moviles -->
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <!-- cambiar color de barra del movil -->
+    <meta name="theme-color" content="#FF6600" />
+    <!-- meta etiquetas de Open Graph -->
+    <meta property="og:title" content="Aprendiendo HTML" />
+    <meta
+      property="og:description"
+      content="En esta página estamos aprendiendo lo fundamentos de Html con jorge"
+    />
+    <!-- siempre poner en el tema de image la ruta relativa la dominio no a la carpeta del proyecto -->
+    <meta
+      property="og:image"
+      content="https://tudominio.com/img/periodic-table-of-html-elements.png"
+    />
+    <!-- colocar la url canonical real del dominio -->
+    <meta property="og:url" content="https://tudominio.com/index.html" />
+    <!-- etiquetas propias de twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@JorgeDevmm" />
+
     <style>
       h2 {
         color: rgb(30, 30, 139);
       }
     </style>
+    <!-- 55 - 66 Caracteres-->
+    <title>Aprendiendo HTML</title>
   </head>
 
   <body>
@@ -66,8 +91,12 @@
         <a href="index.html#elementos-iteractivos">Elementos iteractivos</a>
       </li>
       <li><a href="index.html#audio-video">Audio y Video</a></li>
-      <a href="index.html#inicio">☝️</a>
+      <li><a href="index.html#iframes">iframes</a></li>
+      <li><a href="index.html#formularios">Formularios</a></li>
+      <li><a href="index.html#data-attributes">Data Attributes</a></li>
+      <li><a href="index.html#accesibilidad">Accesibilidad Web</a></li>
     </ul>
+    <a href="index.html#inicio">☝️</a>
     <hr />
 
     <h2 id="encabezados">Encabezados HTML</h2>
@@ -503,6 +532,269 @@
       preload
       poster="img/puesta-sol.jpg"
     ></video>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- idframes -->
+    <h2 id="iframes">iframes</h2>
+    <iframe src="comandos-emmet.html" frameborder="1"></iframe>
+    <br />
+    <!-- pagina externas -->
+    <iframe src="https://twitter.com/JorgeDevmm" frameborder="1"></iframe>
+    <br />
+    <iframe src="media/keyboard-shortcuts-windows.pdf" frameborder="1"></iframe>
+    <br />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4639.958275927183!2d-77.02869915726346!3d-12.062481983557912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e9ca325b31%3A0x4f5285a3fd73915a!2sAv.%2028%20de%20Julio%2C%20Lima!5e0!3m2!1ses-419!2spe!4v1663554409807!5m2!1ses-419!2spe"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/-oK6zL01fNM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- formularios  -->
+    <h2 id="formularios">Formularios</h2>
+    <h3>Elementos de Formularios</h3>
+    <input type="text" />
+    <br />
+    <input type="checkbox" />
+    <br />
+    <input type="radio" />
+    <br />
+    <input type="date" />
+    <br />
+    <input type="color" />
+    <br />
+    <input type="button" value="boton" />
+    <br />
+    <input type="submit" />
+    <br />
+    <input type="reset" />
+    <br />
+    <input type="file" />
+    <br />
+    <input type="file" multiple />
+    <br />
+    <input
+      type="hidden"
+      name="idioma"
+      value="es"
+    /><!--oculto para envio de variables-->
+    <br />
+    <input type="email" />
+    <br />
+    <input type="number" />
+    <br />
+    <input type="tel" />
+    <br />
+    <input type="password" />
+    <br />
+    <input type="search" />
+    <br />
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br />
+    <select name="" id="">
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+      <option value="">PHP</option>
+      <option value="">PYTHON</option>
+    </select>
+    <br />
+    <select name="" id="" multiple>
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+      <option value="">PHP</option>
+      <option value="">PYTHON</option>
+    </select>
+    <br />
+    <!-- atributos de inputs -->
+    <input type="text" value="jorge" readonly disabled />
+    <br />
+    <br />
+    <input type="text" placeholder="Escribe tu nombre" />
+    <br />
+
+    <h3>Ejemplo de Formularios</h3>
+    <h4>Formulario de login</h4>
+    <br />
+    <form action="https://www.google.com" method="GET" autocomplete="off">
+      <!--for vincula con el id de input -->
+      <label for="usuario">Usuario:</label>
+      <input
+        type="text"
+        name="usuario"
+        id="usuario"
+        placeholder="Escribe tu usuario"
+        pattern="^[A-Za-z]+$"
+        title="El campo solo acepta letras"
+        required
+      />
+      <br />
+      <!-- <input type="text" name="email" autocomplete="off" /> -->
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Escribe tu password"
+        required
+      />
+      <br />
+      <input type="submit" value="Enviar" />
+      <br />
+      <input type="reset" value="Limpiar" />
+    </form>
+
+    <h4>Selects,Radios y Checkbox</h4>
+    <form action="">
+      <p>Elige tu idioma</p>
+      <select name="idioma" id="" required>
+        <option value="" selected>Elige una opcion</option>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugués</option>
+      </select>
+      <p>Elige tu elenguaje de programación favorito</p>
+      <!-- todas la opcion del radio deben tener el mismo nombre tambien funciona required y checked -->
+      <input type="radio" name="lenguaje" id="radio-js" value="js" />
+      <label for="radio-js">Javascript</label>
+      <input type="radio" name="lenguaje" id="radio-py" value="py" required />
+      <label for="radio-py">Ptyhon</label>
+      <input type="radio" name="lenguaje" id="radio-php" value="php" checked />
+      <label for="radio-php">PHP</label>
+
+      <!-- checkbox -->
+      <p>Elige tus intereses</p>
+      <label>
+        <input
+          type="checkbox"
+          name="intereses"
+          value="deportes"
+          checked
+        />Deportes
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="finanzas" />Finanzas
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="salud" />Salud
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          name="intereses"
+          value="politica"
+          checked
+        />política
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="salud" />Ecología
+      </label>
+      <p>
+        <label>
+          <input type="checkbox" name="terminos" required />
+          ¿Aceptar términos y condiciones?
+        </label>
+      </p>
+      <br />
+      <input type="submit" value="Enviar" />
+      <br />
+      <input type="reset" value="Limpiar" />
+    </form>
+
+    <!-- https://formsubmit.co/ -->
+    <!-- formulario de contacto -->
+    <h4>Formulario de Contacto</h4>
+    <form action="https://formsubmit.co/your@gmail.com" method="POST">
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre sólo acepta eltra y espacios en blanco"
+        required
+      />
+      <br />
+      <input
+        type="email"
+        name="correo"
+        placeholder="Escribe tu correo"
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        title="Formato de correo invalido"
+        required
+      />
+      <br />
+      <textarea
+        name="comentarios"
+        id=""
+        cols="30"
+        rows="10"
+        required
+      ></textarea>
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- Data Attributes(atributos creados por el propio usuario deben inicial por data-) -->
+    <h2 id="data-attributes">Data Attributes</h2>
+    <ul>
+      <li data-id="1" data-name="spring">Primavera</li>
+      <li data-id="2" data-name="summer">Verano</li>
+      <li data-id="3" data-name="autumn">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- metaetiquetas para seo -->
+    <h2 id="metas-seo">Metaetiquetas para SEO</h2>
+    <br />
+    <a href="index.html#inicio">☝️</a>
+    <hr />
+
+    <!-- accesibilidad web -->
+    <h2 id="accesibilidad">Accesibilidad Web</h2>
+    <!-- - https://web.dev/accessible/
+  - https://html5accessibility.com/
+  - https://www.w3.org/blog/news/archives...
+  - https://www.youtube.com/channel/UCU6l... -->
+    <h3 role="title">Las estaciones del año</h3>
+    <ul role="list">
+      <li tabindex="1" role="listitem">Primavera</li>
+      <li tabindex="2" role="listitem">Verano</li>
+      <li tabindex="3" role="listitem">Otoño</li>
+      <li tabindex="4" role="listitem">Invierno</li>
+    </ul>
+    <a
+      role="link"
+      aria-label="En este enlace encontraras mas información sobre las estaciones del año"
+      href="#"
+      target="_blank"
+      >Mas Información</a
+    >
+    <br />
     <a href="index.html#inicio">☝️</a>
     <hr />
 
